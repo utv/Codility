@@ -54,8 +54,7 @@ class MaxSlicePos {
             return Arrays.copyOfRange(A, start, end + 1);
         }
         // if no array, return an empty array
-        int[] emptyArr = new int[0];
-        return emptyArr;
+        return new int[0];
     }
 
     public static void printArray(int[] A) {
@@ -101,6 +100,8 @@ class MaxSlicePos {
         test(H);
         int[] I = {-6, 0, -1, 1};
         test(I);
+        int[] J = {0, 0, -1, 1};
+        test(J);
 
     }
 }
