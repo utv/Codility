@@ -76,30 +76,50 @@ class MaxSlicePos {
         int[] result = maxSlice(A);
         System.out.print(">> ");
         printArray(result);
-        System.out.println("Result max = " + sumArr(result));
+        // System.out.println("Result max = " + sumArr(result));
         System.out.println("True max = " + maxSumSlice(A));
+        System.out.println(sumArr(result) == maxSumSlice(A));
         System.out.println("-----------------------");
     }
 
     public static void main(String[] args) {
+        // -1
         int[] A = {-10, -1 };
         test(A);
+
+        // 11
         int[] B = {10, 1 };
         test(B);
+
+        // 10
         int[] C = {5, -7, 3, 5, -2, 4, -1};
         test(C);
+
+        // 5
         int[] D = {5};
         test(D);
+
+        // 6
         int[] E = {5, -5, 5, 1};
         test(E);
+
+        // 2
         int[] F = {-631, -4, 0, -1, 0, 0, 1, -2, -4, 0, 1, 1};
         test(F);
+
+        // -4
         int[] G = {-631, -4, -33};
         test(G);
+
+        // 6;
         int[] H = {6, -5, -9};
         test(H);
+
+        // 1
         int[] I = {-6, 0, -1, 1};
         test(I);
+
+        // 1
         int[] J = {0, 0, -1, 1};
         test(J);
 
