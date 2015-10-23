@@ -1,7 +1,7 @@
-package Dominator;
+package Leader.Dominator;
 
 /**
- * Created by Amata on 10/3/15 AD.
+ https://codility.com/programmers/task/dominator
  */
 import java.util.Stack;
 

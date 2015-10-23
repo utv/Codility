@@ -1,3 +1,4 @@
+package Leader;
 // https://codility.com/programmers/task/equi_leader
 
 import java.util.Stack;

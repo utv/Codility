@@ -1,7 +1,7 @@
 package FrogRiverOne;
 
 /**
- * Created by Amata on 9/30/15 AD.
+ * https://codility.com/programmers/task/frog_river_one
  */
 class Solution {
     public int solution(int X, int[] A) {
