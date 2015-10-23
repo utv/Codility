@@ -5,7 +5,7 @@ package Leader.Dominator;
  */
 import java.util.Stack;
 
-class Solution {
+class Dominator {
     public int solution(int[] A) {
         Stack st = new Stack();
         for(int i=0; i < A.length; i++) {

@@ -1,11 +1,11 @@
-package MaxProductOfThree;
+package Sorting;
 
 /**
  * Created by Amata on 10/2/15 AD.
  */
 import java.util.Arrays;
 
-class Solution {
+class MaxProductOfThree {
     public int solution(int[] A) {
         Arrays.sort(A);
 

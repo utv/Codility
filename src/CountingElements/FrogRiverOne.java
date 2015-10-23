@@ -1,9 +1,9 @@
-package FrogRiverOne;
+package CountingElements;
 
 /**
  * https://codility.com/programmers/task/frog_river_one
  */
-class Solution {
+class FrogRiverOne {
     public int solution(int X, int[] A) {
         int N = 100000;
         int[] pos = new int[N+1];

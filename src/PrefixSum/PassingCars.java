@@ -1,9 +1,9 @@
-package PassingCars;
+package PrefixSum;
 
 /**
  * Created by Amata on 10/2/15 AD.
  */
-class Solution {
+class PassingCars {
     public int solution(int[] A) {
         int[] P = new int[A.length + 1];
         P[0] = 0;

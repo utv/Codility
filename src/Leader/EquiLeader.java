@@ -3,7 +3,7 @@ package Leader;
 
 import java.util.Stack;
 
-class Solution {
+class EquiLeader {
     public int solution(int[] A) {
         // Search for a leader
         Stack st = new Stack();

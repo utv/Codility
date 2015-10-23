@@ -1,11 +1,11 @@
-package Nesting;
+package StackQueue;
 
 /**
  * Created by Amata on 10/2/15 AD.
  */
 import java.util.Stack;
 
-class Solution {
+class Nesting {
     public int solution(String S) {
         Stack st = new Stack();
         for(int i=0; i < S.length(); i++) {

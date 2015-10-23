@@ -1,9 +1,9 @@
-package CountDiv;
+package PrefixSum;
 
 /**
  * Created by Amata on 10/1/15 AD.
  */
-class Solution {
+class CountDiv {
     public int solution(int A, int B, int K) {
 //        if(A == B && A % K == 0) return 1;
 //        if(A == B && A % K > 0) return 0;
