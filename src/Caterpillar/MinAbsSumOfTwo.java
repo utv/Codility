@@ -5,13 +5,37 @@ package Caterpillar;
  */
 
 import java.util.Arrays;
+import java.util.Map;
+
 public class MinAbsSumOfTwo {
 
+    // This is cleaner than my solution
+    // http://www.martinkysel.com/codility-minabssumoftwo-solution/
+    public static int solution2(int[] A) {
+        Arrays.sort(A);
+        int front = 0;
+        int back = A.length - 1;
+        int min = Integer.MAX_VALUE;
+
+        int absFront, absBack;
+        while (front <= back) {
+            min = Math.min(min, Math.abs(A[front] + A[back]));
+            absFront = Math.abs(A[front]);
+            absBack = Math.abs(A[back]);
+
+            if (absFront > absBack) front++;
+            else back--;
+        }
+
+        return min;
+    }
+
+    // My solution
     public static int solution(int[] A) {
         Arrays.sort(A);
 
         // Min of pairs (i,j)
-        int back = A.length - 1;
+            int back = A.length - 1;
         int min = Integer.MAX_VALUE;
         for (int front = 0; front < back; front++) {
             int localMin = Math.abs(A[front] + A[back]);

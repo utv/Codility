@@ -3,7 +3,7 @@ package PrefixSum;
 import java.util.*;
 
 /**
- * Created by Amata on 9/15/15 AD.
+ *
  *
  * https://codility.com/media/train/3-PrefixSums.pdf
  */
@@ -26,16 +26,16 @@ public class MushroomPicker {
         int result = 0;
         int left, right, goLeft, goRight;
 
-        // Go left
-        for (goLeft = 1; goLeft <= Math.min(moves, k) ; goLeft++) {
+        // Go left first, then go right
+        for (goLeft = 0; goLeft <= Math.min(moves, k) ; goLeft++) {
             left = Math.max(0, k - goLeft);
             goRight = moves - goLeft;
             right = Math.min(arr.length - 1, Math.max(left + goRight, k));
             result = Math.max(result, total(sum, left, right));
         }
 
-        // Go right
-        for (goRight = 1; goRight <= Math.min(moves, arr.length - k - 1); goRight++) {
+        // Go right first, then go left
+        for (goRight = 0; goRight <= Math.min(moves, arr.length - k - 1); goRight++) {
             right = k + goRight;
             goLeft = moves - goRight;
             left = Math.max(0, Math.min(k, right - goLeft));
@@ -46,8 +46,12 @@ public class MushroomPicker {
     }
 
     public static void main(String[] args) {
-//        int[] arr = {2, 3, 7, 5, 1, 3, 9};
-        int[] arr = {2, 3, 7, 5, 1, 3, 999};
-         System.out.println("Mushroom = " + mushroom(arr, 4, 4));
+        int[] arr = {2, 3, 7, 5, 1, 3, 9};
+//        int[] arr = {2, 3, 7, 5, 1, 3, 999};
+        int m = 0;
+        System.out.println("move = " + m + ", Mushroom = " + mushroom(arr, 4, m));
+
+        m = 6;
+        System.out.println("move = " + m + ", Mushroom = " + mushroom(arr, 4, m));
     }
 }
