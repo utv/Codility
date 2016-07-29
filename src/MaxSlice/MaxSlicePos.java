@@ -23,6 +23,9 @@ class MaxSlicePos {
         return max;
     }
 
+    /*
+     * returns an array of max slice
+     */
     public static int[] maxSlice(int[] A) {
         int sum, max, end;
         if (A.length > 0) {
